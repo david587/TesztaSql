@@ -26,9 +26,10 @@ where tesztak.ar =
 
 --4,
 select count(tesztak.nev) as tesztaDarabszama
-from tesztak
-join kategoriak on tesztak.kategoriaId = kategoriak.id
-where tesztak.nev like '%8 tojásos';
+from tesztak 
+join kategoriak on tesztak.kategoriaId = kategoriak.id 
+where kategoriak.nev 
+like '%8 tojásos';
 
 --5,
 select vevok.nev,rendelesek.datum
